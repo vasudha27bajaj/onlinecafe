@@ -1,0 +1,68 @@
+
+body
+{
+    background-image: url(images/Food-Photography-Props-Web.jpg);
+    margin:0px;
+    padding:0px;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+}
+.home
+{
+  object-fit:contain;
+}
+ul li
+{
+    display: inline;
+    padding: 20px;
+}
+ul.right
+{
+    float: right;
+    padding: 30px;
+}
+a.bar
+{
+    text-decoration: none;
+    color:white;
+    font-size: 20px;
+}
+a:hover
+{
+    color:#CF273E
+}
+.left
+{
+  float: left;
+}
+h2
+{
+    clear: both;
+    float: left;
+    color: white;
+}
+.float
+{
+    clear: both;
+    float: left;
+}
+.float1
+{
+    float: left;
+    margin-left: 5%;
+}
+hr {
+    border-top:1px dotted white;
+}
+.menu
+{
+    display: block;
+    color: white;
+    font-style: italic;
+}
+.menu2
+{
+    clear: left;
+    float: right;
+}
