@@ -22,7 +22,7 @@
 <br><br><br><br>
 <div class="content">
 	<h1>Welcome To SAM'S Anchor Cafe</h1>
-	<p>Come and eat well with our delicious & healthy foods.</p>
+	<p>Come and eat well with our delicious & healthy foods in great ambience.</p>
     <p><button class="button"><a class="btnlink" href="menu.php">Check Our Menu</a></button></p>
 </div>
 </body>
