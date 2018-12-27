@@ -77,4 +77,19 @@ $username = ($_POST['username']);
 	}
     }
     }
+/*function display()
+{
+ //include('connection.php');
+  $id=$_SESSION['SESS_MEMBER_ID'];
+      $p3 = "SELECT * FROM members WHERE id = '$username'";
+  
+  $resulta = mysqli_query($connection,$p3);
+
+			while($row = mysqli_fetch_array($resulta,))
+			{
+			echo $row['name'] .' '. $row['surname'];
+			}
+  
+}*/
+
 ?>

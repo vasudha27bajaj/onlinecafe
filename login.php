@@ -34,7 +34,26 @@ if ((y==null || y==""))
   alert("you must enter your password");
   return false;
   }
- 
+ if(y==null && a==null)
+       {
+  alert("you must enter your username");
+  return false;
+  } 
+    if(y=="" && a=="")
+       {
+  alert("you must enter your username");
+  return false;
+  }
+    if(y=="" && a==null)
+       {
+  alert("you must enter your username");
+  return false;
+  }
+    if(y==null && a=="")
+       {
+  alert("you must enter your username");
+  return false;
+  }
 
 }
 </script>
@@ -48,7 +67,6 @@ if ((y==null || y==""))
 		<li><a class="bar" href="">ABOUT</a></li>
 		<li><a class="bar" href="front.php">HOME</a></li>
 		<li><a class="bar" href="menu.php">MENU</a></li>
-		<li><a class="bar" href="">GALLERY</a></li>
 		<li><a class="bar" href="">CONTACT</a></li>
 	</ul>
 </div>

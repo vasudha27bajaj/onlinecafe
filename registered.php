@@ -17,7 +17,6 @@
 		<li><a class="bar" href="">ABOUT</a></li>
 		<li><a class="bar" href="front.php">HOME</a></li>
 		<li><a class="bar" href="menu.php">MENU</a></li>
-		<li><a class="bar" href="">GALLERY</a></li>
 		<li><a class="bar" href="">CONTACT</a></li>
 	</ul>
 </div>
