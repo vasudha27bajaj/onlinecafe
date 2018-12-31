@@ -6,5 +6,5 @@
     {
         die("database connection failed");
     }
-
+session_start();
 ?>

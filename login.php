@@ -1,16 +1,5 @@
 <?php include "connection.php";?>
-<?php include "functions.php";?>
-<?php
-	//Start session
-	session_start();
-	
-	//Unset the variables stored in session
-	unset($_SESSION['SESS_MEMBER_ID']);
-	unset($_SESSION['SESS_FIRST_NAME']);
-?>
-<?php
-login();
-?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -74,7 +63,7 @@ if ((y==null || y==""))
         <div class="col-xs-6">
            <h1 class="text-center">Log-In Here!</h1>
            <br><br>
-            <form action="login.php" name="login" onsubmit="validate()" method="post">
+            <form action="functions.php" name="login" onsubmit="validate()" method="post">
                 <div class="form-group">
                    <label class="text" for="username">Username</label>
                     <input type="text" name="username" class="form-control">
@@ -83,7 +72,7 @@ if ((y==null || y==""))
                    <label class="text" for="password">Password</label>
                     <input type="password" name="password" class="form-control">
                 </div>
-                <input class="btn btn-primary" type="submit" name="submit" value="Log In">
+                <input class="btn btn-primary" type="submit" name="login" value="Log In">
             </form>
             <p>Not a Member?</p>
             <a class="signup" href="sign-up.php">Sign-Up</a>

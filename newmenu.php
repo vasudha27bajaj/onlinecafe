@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -15,8 +16,9 @@
 	</ul>
 	<ul class="right">
 		<li><a class="bar" href="">ABOUT</a></li>
-		<li><a class="bar" href="front.php">HOME</a></li>
+		<li><a class="bar" href="orderonline.php">HOME</a></li>
 		<li><a class="bar" href="">CONTACT</a></li>
+		<li><a class="bar" href="order.php">ORDER ONLINE</a></li>
 	</ul>
 </div>
     </div>

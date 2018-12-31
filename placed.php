@@ -1,4 +1,4 @@
-<?php include "connection.php";?>
+<?php include "functions.php"; ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,24 +8,23 @@
 	<title></title>
 </head>
 <body>
-<div>
+
 <div>
 	<ul class="left">
 		<li><img src="images/download%20(1).png" width="200px" height="110px"></li>
 	</ul>
 	<ul class="right">
 		<li><a class="bar" href="">ABOUT</a></li>
-		<li><a class="bar" href="newmenu.php">MENU</a></li>
+		<li><a class="bar" href="front.php">HOME</a></li>
+		<li><a class="bar" href="menu.php">MENU</a></li>
 		<li><a class="bar" href="">CONTACT</a></li>
-		<li><a class="bar" href="order.php">ORDER ONLINE</a></li>
 		<li><a class="bar" href="logout.php">LOG-OUT</a></li>
 	</ul>
 </div>
-<br><br><br><br>
-<div class="content">
-	<h1>Welcome To SAM'S Anchor Cafe</h1>
-	<p>Come and eat well with our delicious & healthy foods.</p>
-    <p><button class="button"><a class="btnlink" href="menu.php">Check Our Menu</a></button></p>
-</div>
+<div class="container login-box2">
+        <div class="col-xs-6 success">
+           <h1 class="text-center">ORDER PLACED..!!</h1>
+         </div>
+    </div>
 </body>
 </html>
