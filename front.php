@@ -4,6 +4,16 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="style.css">
+	<style type="text/css">
+		.foot
+		{
+			float: right;
+			margin-top: 10%;
+			margin-bottom: 0px;
+			padding: 0px;
+			color: #8809D6;
+		}
+	</style>
 	<title></title>
 </head>
 <body>
@@ -25,5 +35,6 @@
 	<p>Come and eat well with our delicious & healthy foods in great ambience.</p>
     <p><button class="button"><a class="btnlink" href="menu.php">Check Our Menu</a></button></p>
 </div>
+<pre class="foot"><a class="bar" href="">order history</a></pre>
 </body>
 </html>

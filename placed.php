@@ -1,4 +1,23 @@
 <?php include "functions.php"; ?>
+<?php 
+$username = $_SESSION['username'];
+    $query = "UPDATE orders SET ";
+    $query.= "isactive = 0 ";
+    $query.= "WHERE username ='$username'";
+
+    $result = mysqli_query($connection,$query);
+    if(!$result)
+    {
+        die('Query failed!');
+    }
+    $sum=0;
+    $sum = $_POST['varname'];
+    $date = date("d-m-y");
+    $qry = "INSERT INTO admin(name,amount,order_date) ";
+    $qry.= "VALUES ('$username',$sum,'$date')";
+    $res = mysqli_query($connection,$qry);
+    
+    ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -15,7 +34,7 @@
 	</ul>
 	<ul class="right">
 		<li><a class="bar" href="">ABOUT</a></li>
-		<li><a class="bar" href="front.php">HOME</a></li>
+		<li><a class="bar" href="orderonline.php">HOME</a></li>
 		<li><a class="bar" href="menu.php">MENU</a></li>
 		<li><a class="bar" href="">CONTACT</a></li>
 		<li><a class="bar" href="logout.php">LOG-OUT</a></li>

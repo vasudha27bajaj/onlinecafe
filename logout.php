@@ -1,16 +1,11 @@
 <?php include "connection.php" ?>
 <?php
     
-    $username = $_SESSION['username'];
-    $query = "UPDATE orders SET ";
-    $query.= "isactive = 0 ";
-    $query.= "WHERE username ='$username'";
     
-    $result = mysqli_query($connection,$query);
-    if(!$result)
-    {
-        die('Query failed!');
-    }
+   $newquery = "DELETE FROM orders ";
+    $newquery.= "WHERE username ='$username'";
+    
+    $last = mysqli_query($connection,$newquery);
 
 		session_destroy();
 		?>

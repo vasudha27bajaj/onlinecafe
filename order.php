@@ -93,10 +93,10 @@ a.float
           while($row = mysqli_fetch_array($result))
           {
           
-          $qry = "SELECT * FROM orders where dish ='". $row["dish"]."'";
+        /*  $qry = "SELECT * FROM orders where dish ='". $row["dish"]."'";
           $qry = mysqli_query($connection,$qry);
           $res = mysqli_fetch_array($qry);
-          $quantity = $res['quantity'];
+          $quantity = $res['quantity'];*/
 
 ?>        
         <form action="functions.php" method="POST"> 
@@ -104,7 +104,7 @@ a.float
           <td><?php echo $row["dish"]; ?></td>
           <td><?php echo $row["price"] ?></td>
          <td>
-         <input id="1" type="number" value="<?php echo $quantity; ?>" name="hidden_quantity" min="0" max="10">
+         <input id="1" type="number" value=1 name="hidden_quantity" min="0" max="10">
          </td>
          <td>
          <input type="hidden" name="hidden_dish" value="<?php echo $row['dish'] ?>">

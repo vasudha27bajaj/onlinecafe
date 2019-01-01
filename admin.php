@@ -1,7 +1,7 @@
 <?php include "connection.php" ?>
 <?php
     $username = $_SESSION['username'];
-    $query = "SELECT * FROM orders where username ='$username' and isactive = 1";
+    $query = "SELECT * FROM admin";
     $result = mysqli_query($connection,$query);
     if(!$result)
     {
@@ -87,43 +87,28 @@ a.float
   <table class="table">
   <thead>
       <tr>
-       <th class="size2">ID</th>
+       <th class="size2">ORDER_ID</th>
         <th class="size2">NAME </th>
-        <th class="size2">PRICE</th>
-        <th class="size2">QUANTITY</th>
-        <th class="size2">AMOUNT</th>
+        <th class="size2">ORDER_AMOUNT</th>
+        <th class="size2">DATE</th>
       </tr>
     </thead>
     <tbody>
       <tr>
            <?php
-           $sum=0;
             while($res = mysqli_fetch_assoc($result)){
-              $sum = $sum+$res['total'];
         
             ?>
                   
-                <td class="size"><?php echo $res["id"] ?></td>     
-          <td class="size"><?php echo $res["dish"]; ?></td>
-          <td class="size"><?php echo $res["price"] ?></td>
-          <td class="size"><?php echo $res["quantity"] ?></td>
-          <td class="size"><?php echo $res["total"] ?></td>
+                <td class="size"><?php echo $res["order_id"] ?></td>     
+          <td class="size"><?php echo $res["name"]; ?></td>
+          <td class="size"><?php echo $res["amount"] ?></td>
+          <td class="size"><?php echo $res["order_date"] ?></td>
       </tr>
 
             <?php
             }
             ?>
-           <tr>
-           	<td>
-              <form action="placed.php" method="POST">
-              <input type="hidden" name="varname" value="<?php echo $sum ?>">
-              <input class="button" type="submit" name="button" value="place order">
-                    </form></td> 
-           <td></td> 
-           <td></td>  
-           <td></td>   
-            <td><?php echo $sum ?></td>
-           </tr>
            </tbody> 
     </div>
 
