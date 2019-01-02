@@ -1,11 +1,11 @@
 body
 {
-	background-image:url('images/new.jpg');
-	margin:0px;
-	padding:0px;
-	background-repeat: no-repeat;
-	background-size:cover;
-	background-attachment: fixed;
+    background-image:url('images/new.jpg');
+    margin:0px;
+    padding:0px;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
 }
 .home
 {
@@ -13,23 +13,23 @@ body
 }
 ul li
 {
-	display: inline;
-	padding: 20px;
+    display: inline;
+    padding: 20px;
 }
 ul.right
 {
-	float: right;
-	padding: 30px;
+    float: right;
+    padding: 30px;
 }
 a.bar
 {
-	text-decoration: none;
-	color:white;
-	font-size: 20px;
+    text-decoration: none;
+    color:white;
+    font-size: 20px;
 }
 a:hover
 {
-	color:#CF273E
+    color:#CF273E
 }
 .left
 {
@@ -37,20 +37,20 @@ a:hover
 }
 div.content
 {
-	clear: both;
-	margin-top: 250px;
+    clear: both;
+    margin-top: 250px;
 }
 h1
 {
-	text-align: center;
-	color: white;
-	font-family: comic sans ms;
+    text-align: center;
+    color: white;
+    font-family: comic sans ms;
 }
 p
 {
-	text-align: center;
-	color: white;
-	font-family: comic sans ms;
+    text-align: center;
+    color: white;
+    font-family: comic sans ms;
 }
 .button
 {
@@ -63,8 +63,8 @@ p
 }
 .button:hover
 {
-	background-color:rgba(25,48,49,0.3); 
-	border: 1px solid rgba(25,48,49,0.5);
+    background-color:rgba(25,48,49,0.3); 
+    border: 1px solid rgba(25,48,49,0.5);
 }
 .login-box
 {

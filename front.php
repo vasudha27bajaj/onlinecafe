@@ -14,7 +14,8 @@
 			color: #8809D6;
 		}
 	</style>
-	<title></title>
+	<title>Sam's Anchor Cafe</title>
+  <link rel="icon" type="image/png" href="images/new.png">
 </head>
 <body>
 <div>
@@ -35,6 +36,6 @@
 	<p>Come and eat well with our delicious & healthy foods in great ambience.</p>
     <p><button class="button"><a class="btnlink" href="menu.php">Check Our Menu</a></button></p>
 </div>
-<pre class="foot"><a class="bar" href="">order history</a></pre>
+<pre class="foot"><a class="bar" href="adminform.php">order history</a></pre>
 </body>
 </html>

@@ -3,6 +3,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -59,7 +62,8 @@ a.float
 }
 
     </style>
-	<title></title>
+	<title>Sam's Anchor Cafe</title>
+  <link rel="icon" type="image/png" href="images/new.png">
 </head>
 <body>
 <nav>
@@ -115,7 +119,7 @@ a.float
          <td>
          <input type="hidden" name="hidden_id" value="<?php echo $row['id'] ?>">
          </td>
-             <td><input type="submit" value="ADD" name="add"></td></form>
+             <td><input class="btn btn-light" type="submit" value="ADD" name="add"></td></form>
           </tr>
           <?php 
           }
@@ -123,6 +127,8 @@ a.float
       ?>
     </table>
     </div>
-    <button class="button"><a class="btn" href="bill.php">ADD TO CART</a></button>
+    <a href="bill.php" class="btn btn-success button">
+      <span class="glyphicon glyphicon-shopping-cart"></span>&nbsp;Cart&nbsp; 
+    </a>
 </body>
 </html>

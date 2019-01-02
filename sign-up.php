@@ -1,23 +1,21 @@
 <?php include "connection.php";?>
-<?php include "functions.php";?>
-<?php
-register();
-?>
+
 <!DOCTYPE html>
 <html>
 <head>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="style.css">
-	<title></title>
+	<title>Sam's Anchor Cafe</title>
+  <link rel="icon" type="image/png" href="images/new.png">
 	<script type="text/javascript">
 function validateForm()
 {
 
-var j=document.forms["myform"]["username"].value;
-var a=document.forms["myform"]["email"].value;
-var b=document.forms["myform"]["password"].value;
-var d=document.forms["myform"]["pass2"].value;
+var j=document.forms["register"]["username"].value;
+var a=document.forms["register"]["email"].value;
+var b=document.forms["register"]["password"].value;
+var d=document.forms["register"]["pass2"].value;
 
 if ((j==null || j==""))
   {
@@ -71,7 +69,7 @@ if (atpos<1 || dotpos<atpos+2 || dotpos+2>=a.length)
         <div class="col-xs-6">
            <h1 class="text-center">Sign-Up!</h1>
            <br>
-            <form name="myform" onsubmit="return validateForm()" action="sign-up.php" method="post">
+            <form name="register" action="functions.php" onclick="return validateForm()" method="post">
                 <div class="form-group">
                    <label class="text" for="username">Username</label>
                     <input type="text" name="username" class="form-control">

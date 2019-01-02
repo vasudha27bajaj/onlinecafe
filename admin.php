@@ -1,6 +1,6 @@
 <?php include "connection.php" ?>
 <?php
-    $username = $_SESSION['username'];
+    //$username = $_SESSION['username'];
     $query = "SELECT * FROM admin";
     $result = mysqli_query($connection,$query);
     if(!$result)
@@ -69,17 +69,15 @@ a.float
 
 
     </style>
-    <title>Document</title>
-    
+    <title>Sam's Anchor Cafe</title>
+    <link rel="icon" type="image/png" href="images/new.png">
 </head>
 <body>
 <nav>
 <ul>
  <li><img class="logo" src="images/download%20(1).png" width="180" height="90" alt=""></li>
-  <li><a class="float" href="">ABOUT</a></li>
-  <li><a class="float" href="orderonline.php">HOME</a></li>
-  <li><a class="float" href="menu.php">MENU</a></li>
-  <li><a class="float" href="">CONTACT</a></li>
+ 
+  <li><a class="float" href="front.php">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HOME</a></li>
   
 </ul>
 </nav>

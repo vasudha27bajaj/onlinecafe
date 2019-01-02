@@ -66,11 +66,14 @@ a.float
 {
   text-decoration: none;
 }
-
+.class
+{
+  background-color:#E6CBF7;
+}
 
     </style>
-    <title>Document</title>
-    
+    <title>Sam's Anchor Cafe</title>
+    <link rel="icon" type="image/png" href="images/new.png">
 </head>
 <body>
 <nav>
@@ -98,8 +101,10 @@ a.float
       <tr>
            <?php
            $sum=0;
+           $sum2=0;
             while($res = mysqli_fetch_assoc($result)){
               $sum = $sum+$res['total'];
+              $sum2 = $sum2+$res['quantity'];
         
             ?>
                   
@@ -113,16 +118,30 @@ a.float
             <?php
             }
             ?>
-           <tr>
-           	<td>
-              <form action="placed.php" method="POST">
-              <input type="hidden" name="varname" value="<?php echo $sum ?>">
-              <input class="button" type="submit" name="button" value="place order">
-                    </form></td> 
+            <tr>
+            <td></td> 
            <td></td> 
            <td></td>  
            <td></td>   
+            <td></td>
+           </tr>
+           <tr class="class">
+           	<td><b>ORDER TOTAL</b></td> 
+           <td></td> 
+           <td></td>  
+           <td><?php echo $sum2 ?></td>   
             <td><?php echo $sum ?></td>
+           </tr>
+           <tr>
+            <td>
+              </td> 
+           <td></td> 
+           <td></td>  
+           <td></td>   
+            <td><form action="placed.php" method="POST">
+              <input type="hidden" name="varname" value="<?php echo $sum ?>">
+              <input class="button btn btn-success" type="submit" name="button" value="place order">
+                    </form></td>
            </tr>
            </tbody> 
     </div>
